@@ -1,0 +1,26 @@
+{
+    "anthracnose": {
+        "name": "Anthracnose",
+        "description": "Anthracnose is caused by a fungus, and among vegetables, it attacks cucurbits. Disease symptoms include small, circular, water - soaked lesions on both young and old leaves which turn brownish and papery over time."
+    },
+    "cercospora_leaf_spot" : {
+        "name": "Cercospora Leaf Spot",
+        "description": "Cercospora leaf spot, caused by the fungus Cercospora beticola. Symptoms occur as numerous, small circular leaf spots. Spots have a pale brown to off-white center with a red margin. Lesions expand in size, coalesce, turn gray as the fungus sporulates, and can result in extensive loss of foliage making leafy greens unmarketable."
+    },
+    "cladosporium_leaf_spot" : {
+        "name": "Cladosporium Leaf Spot",
+        "description": "Caused by Cladosporium variabile fungi and can be severe in spinach seed production. Symptoms include Round, brownish leaf spots that rarely exceed 0.2 inch in diameter. Dark green spores and mycelium later develop in the centers of the spots."
+    },
+    "downy_mildew" : {
+        "name": "Downy Mildew",
+        "description": "Caused by a fungus-like (Oomycete) organism. It is spread from plant to plant by airborne spores. Symptoms include dull to bright yellow spots that form on cotyledons and leaves of all ages."
+    },
+    "healthy" : {
+        "name": "Healthy",
+        "description": "The image provided looks healthy! :)"
+    },
+    "stemphylium_leaf_spot" : {
+        "name": "Stemphylium Leaf Spot",
+        "description": "Caused by a fungus, Stemphylium botryosum. At first, leaf spots are circular and sunken, but expand to become gray-green and up to 0.25-inch in diameter with an oval or round shape. Leaf spots expand and turn tan and then brown in color as disease progresses."
+    }
+}
