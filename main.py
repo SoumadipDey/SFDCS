@@ -97,7 +97,7 @@ class MainWindow(QMainWindow):
         else:
             print("No image given!")
 
-    def updateWidgets(self,pred_class_name : str,confidence : float):
+    def updateWidgets(self,pred_class_name : str,confidence : float) -> None:
         with open(f"{self.databasePath}/collection_basicinfo.json") as json_file:
             collection = json.load(json_file)
             field = collection[pred_class_name]
@@ -117,7 +117,7 @@ class MainWindow(QMainWindow):
                 description = "Description :\n" + field["description"]
                 self.ui.descriptionLabel.setText(description)
 
-    def openDetails(self):
+    def openDetails(self) -> None:
         #Code to open the details screen here
         self.detailsWindow = QMainWindow()
         self.detail_ui = Ui_detailsWindow()
