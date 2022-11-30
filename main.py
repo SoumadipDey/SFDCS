@@ -1,4 +1,4 @@
-# GUI FILE
+# Importing GUI files and necessary packages
 from spinachClassifierMainUI import Ui_MainWindow
 from detailsWindowUI import Ui_detailsWindow
 from PySide2.QtWidgets import *
@@ -26,9 +26,14 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
         self.ui.cureBtn.setDisabled(True)
         self.ui.detailsBtn.setDisabled(True)
-         
-        #Initializing some variables and iterables for future use
+
+        #Initializing some window and ui variables 
         self.detailsWindow = None
+        self.detail_ui = None
+        self.cureWindow = None
+        self.cure_ui = None
+
+        #Initializing some variables and iterables for future use
         self.classification = None
         self.databasePath = "database"
         self.selectedImagePath = None
@@ -47,12 +52,12 @@ class MainWindow(QMainWindow):
         self.ui.browseBtn.clicked.connect(self.fileSelector)
         self.ui.predictBtn.clicked.connect(self.predictClass)
         self.ui.detailsBtn.clicked.connect(self.openDetails)
-        
-    
+        self.ui.cureBtn.clicked.connect(lambda: print("Not Implemented Yet!"))
 
     def fileSelector(self) -> None:
         #Show File Dialouge Box
         fname = QFileDialog.getOpenFileName(None, 'Open file','c:\\', "Image files (*.jpg *.png)")
+        
         #Take fname[0] value only if its a valid file
         if(len(fname[0]) > 0):
             imagePath = fname[0]
