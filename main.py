@@ -28,6 +28,7 @@ class MainWindow(QMainWindow):
         self.ui.detailsBtn.setDisabled(True)
          
         #Initializing some variables and iterables for future use
+        self.detailsWindow = None
         self.classification = None
         self.databasePath = "database"
         self.selectedImagePath = None
@@ -104,6 +105,8 @@ class MainWindow(QMainWindow):
                 self.ui.descriptionLabel.setText(description)
                 
             else:
+                self.ui.cureBtn.setDisabled(True)
+                self.ui.detailsBtn.setDisabled(True)
                 self.ui.diseaseNameLabel.setText(str(field["name"]))
                 self.ui.confidenceProgressBar.setValue(confidence)
                 description = "Description :\n" + field["description"]
@@ -112,11 +115,29 @@ class MainWindow(QMainWindow):
     def openDetails(self):
         #Code to open the details screen here
         self.detailsWindow = QMainWindow()
-        message = self.classification
-        self.detail_ui = Ui_detailsWindow(message,self.databasePath)
+        self.detail_ui = Ui_detailsWindow()
         self.detail_ui.setupUi(self.detailsWindow)
+
+        diseaseImagePath = f"{self.databasePath}/ReferenceImages/{self.classification}.jpg"
+        diseasePixmap = QPixmap(diseaseImagePath)
+        self.detail_ui.referencelImageLabel.setPixmap(QPixmap(diseasePixmap))
+
+        diseaseInfoPath = f"{self.databasePath}/collection_detailedinfo.json"
+
+        with open(diseaseInfoPath) as json_file:
+                collection = json.load(json_file)[self.classification]
+                name = collection["name"]
+                pathogen = collection["pathogen"]
+                symptoms = collection["symptoms"]
+                favCondition = collection["favourable_conditions"]
+
+        self.detail_ui.diseaseNameLabel.setText(name)
+        self.detail_ui.pathogenLabel.setText(pathogen)
+        self.detail_ui.symptomsLabel.setText(symptoms)
+        self.detail_ui.favCondLabel.setText(favCondition)
+
         self.detailsWindow.show()
-        
+    
 
 if __name__ == "__main__":
     # Prevent Tesnsorflow from printing info / warning

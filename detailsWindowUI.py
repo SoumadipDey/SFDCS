@@ -14,33 +14,6 @@ from PySide2.QtWidgets import *
 import json as json
 
 class Ui_detailsWindow(QMainWindow):
-    def __init__(self, message:str, dbPath:str):
-        QMainWindow.__init__(self)
-        self.message = message
-        self.dbPath = dbPath
-
-        finish = QAction("Quit", self)
-        finish.triggered.connect(self.closeEvent)
-
-    def assignValues(self):
-        diseaseImagePath = f"{self.dbPath}/ReferenceImages/{self.message}.jpg"
-        diseasePixmap = QPixmap(diseaseImagePath)
-        self.referencelImageLabel.setPixmap(QPixmap(diseasePixmap))
-
-        diseaseInfoPath = f"{self.dbPath}/collection_detailedinfo.json"
-
-        with open(diseaseInfoPath) as json_file:
-                collection = json.load(json_file)[self.message]
-                name = collection["name"]
-                pathogen = collection["pathogen"]
-                symptoms = collection["symptoms"]
-                favCondition = collection["favourable_conditions"]
-
-        self.diseaseNameLabel.setText(name)
-        self.pathogenLabel.setText(pathogen)
-        self.symptomsLabel.setText(symptoms)
-        self.favCondLabel.setText(favCondition)
-
     def setupUi(self, detailsWindow):
         if not detailsWindow.objectName():
             detailsWindow.setObjectName(u"detailsWindow")
@@ -259,8 +232,6 @@ class Ui_detailsWindow(QMainWindow):
         detailsWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(detailsWindow)
-
-        self.assignValues()
 
         QMetaObject.connectSlotsByName(detailsWindow)
         
