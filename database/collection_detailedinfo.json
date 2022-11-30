@@ -1,44 +1,38 @@
 {
     "anthracnose": {
         "name": "Anthracnose",
-        "description": "Anthracnose is caused by a fungus, and among vegetables, it attacks cucurbits. Disease symptoms include small, circular, water - soaked lesions on both young and old leaves which turn brownish and papery over time.",
-        "pathogen": "",
-        "symptoms": "",
-        "favourable_conditions": ""
+        "pathogen": "Colletotrichum Gloeosporioides fungus",
+        "symptoms": "Symptoms of anthracnose diseases range from minor, cosmetic spotting of leaves, to blighting of leaves and tender shoots, to dieback of twigs and branches. Symptoms also vary with the individual host and the causal fungus.",
+        "favourable_conditions": "Leaves remaining wet for more than a few hours, cool conditions (10°C - 20°C)."
     },
     "cercospora_leaf_spot" : {
         "name": "Cercospora Leaf Spot",
-        "description": "Cercospora leaf spot, caused by the fungus Cercospora beticola. Symptoms occur as numerous, small circular leaf spots. Spots have a pale brown to off-white center with a red margin. Lesions expand in size, coalesce, turn gray as the fungus sporulates, and can result in extensive loss of foliage making leafy greens unmarketable.",
-        "pathogen": "",
-        "symptoms": "",
-        "favourable_conditions": ""
+        "pathogen": "Cercospora Beticola fungus",
+        "symptoms": "Symptoms of Cercospora leaf spot first appear as individual, circular spots that are tan to light brown with reddish purple borders. As the disease progresses, individual spots coalesce. Heavily infected leaves first become yellow and eventually turn brown and necrotic.",
+        "favourable_conditions": "Warm, humid weather."
     },
     "cladosporium_leaf_spot" : {
         "name": "Cladosporium Leaf Spot",
-        "description": "Caused by Cladosporium variabile fungi and can be severe in spinach seed production. Symptoms include Round, brownish leaf spots that rarely exceed 0.2 inch in diameter. Dark green spores and mycelium later develop in the centers of the spots.",
-        "pathogen": "",
-        "symptoms": "",
-        "favourable_conditions": ""
+        "pathogen": "Cladosporium Variabile fungus",
+        "symptoms": "Early leaf spots are tan colored, and expand to 1-3mm in diameter. Adjacent spots may coalesce, forming irregular lesions. As the disease develops, velvety dark green-brown sporulation develops within the lesions.",
+        "favourable_conditions": "Cool conditions (10°C - 20°C) with high humidity. Disease is seed borne."
     },
     "downy_mildew" : {
         "name": "Downy Mildew",
-        "description": "Caused by a fungus-like (Oomycete) organism. It is spread from plant to plant by airborne spores. Symptoms include dull to bright yellow spots that form on cotyledons and leaves of all ages.",
-        "pathogen": "",
-        "symptoms": "",
-        "favourable_conditions": ""
+        "pathogen": "Funguslike organisms of the phylum Oomycota",
+        "symptoms": "Downy mildew causes light green to yellow angular spots on the upper surfaces of leaves. The white fluffy growth of the pathogen develops on the lower sides of these spots. With time these lesions turn brown and dry up. Older leaves are attacked first. Severely infected leaves may die.",
+        "favourable_conditions": "Cool (10°C - 20°C) conditions, free water on the leaves."
     },
     "healthy" : {
         "name": "Healthy",
-        "description": "The image provided looks healthy! :)",
-        "pathogen": "",
-        "symptoms": "",
-        "favourable_conditions": ""
+        "pathogen": "NULL",
+        "symptoms": "NULL",
+        "favourable_conditions": "NULL"
     },
     "stemphylium_leaf_spot" : {
         "name": "Stemphylium Leaf Spot",
-        "description": "Caused by a fungus, Stemphylium botryosum. At first, leaf spots are circular and sunken, but expand to become gray-green and up to 0.25-inch in diameter with an oval or round shape. Leaf spots expand and turn tan and then brown in color as disease progresses.",
-        "pathogen": "",
-        "symptoms": "",
-        "favourable_conditions": ""
+        "pathogen": "Stemphylium botryosum, Stemphylium sp and S. beticola.",
+        "symptoms": "Symptoms of Stemphylium leaf spot on leaves consist of small (0.13 to 0.25 inch diameter), circular to oval, gray-green leaf spots. As the disease progresses, leaf spots enlarge, remain circular to oval in shape, and turn tan in color. Older spots coalesce, dry up, and become papery in texture",
+        "favourable_conditions": "Prolonged periods of leaf wetness when temperatures are moderate (17°C - 23°C). Frequent rains."
     }
 }

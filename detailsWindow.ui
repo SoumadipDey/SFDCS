@@ -33,7 +33,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>:/newPrefix/logo.png</normaloff>:/newPrefix/logo.png</iconset>
+    <normaloff>logo.png</normaloff>logo.png</iconset>
   </property>
   <property name="iconSize">
    <size>
@@ -74,6 +74,15 @@
 border: 1px solid rgb(205,214,219);</string>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
      <item>
       <spacer name="verticalSpacer">
        <property name="orientation">
@@ -108,7 +117,8 @@ border: 1px solid rgb(205,214,219);</string>
         </size>
        </property>
        <property name="styleSheet">
-        <string notr="true">border-radius: 4px;</string>
+        <string notr="true">border: 2px solid rgb(85,101,85);
+border-radius: 10px;</string>
        </property>
        <property name="text">
         <string/>
@@ -145,13 +155,13 @@ border: 1px solid rgb(205,214,219);</string>
        <property name="minimumSize">
         <size>
          <width>490</width>
-         <height>75</height>
+         <height>70</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
          <width>490</width>
-         <height>75</height>
+         <height>70</height>
         </size>
        </property>
        <property name="styleSheet">
@@ -198,15 +208,21 @@ border-radius: 5px;
          <widget class="QLabel" name="diseaseNameLabel">
           <property name="minimumSize">
            <size>
-            <width>80</width>
+            <width>364</width>
             <height>50</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>400</width>
+            <width>364</width>
             <height>50</height>
            </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Product Sans Medium</family>
+            <pointsize>10</pointsize>
+           </font>
           </property>
           <property name="styleSheet">
            <string notr="true">background-color: rgb(205,214,219);
@@ -235,13 +251,13 @@ padding-left : 5px;</string>
        <property name="minimumSize">
         <size>
          <width>490</width>
-         <height>75</height>
+         <height>70</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
          <width>490</width>
-         <height>75</height>
+         <height>70</height>
         </size>
        </property>
        <property name="styleSheet">
@@ -288,15 +304,21 @@ border-radius: 5px;
          <widget class="QLabel" name="pathogenLabel">
           <property name="minimumSize">
            <size>
-            <width>80</width>
+            <width>364</width>
             <height>50</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>16777215</width>
+            <width>364</width>
             <height>50</height>
            </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Product Sans Medium</family>
+            <pointsize>10</pointsize>
+           </font>
           </property>
           <property name="styleSheet">
            <string notr="true">background-color: rgb(205,214,219);
@@ -325,13 +347,13 @@ padding-left : 5px;</string>
        <property name="minimumSize">
         <size>
          <width>490</width>
-         <height>75</height>
+         <height>90</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
          <width>490</width>
-         <height>75</height>
+         <height>90</height>
         </size>
        </property>
        <property name="styleSheet">
@@ -349,13 +371,13 @@ padding-left : 5px;</string>
           <property name="minimumSize">
            <size>
             <width>100</width>
-            <height>50</height>
+            <height>80</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
             <width>100</width>
-            <height>50</height>
+            <height>80</height>
            </size>
           </property>
           <property name="styleSheet">
@@ -375,33 +397,72 @@ border-radius: 5px;
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="symptomsLabel">
+         <widget class="QScrollLabel" name="symptomsLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="minimumSize">
            <size>
-            <width>80</width>
-            <height>50</height>
+            <width>364</width>
+            <height>80</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>16777215</width>
-            <height>50</height>
+            <width>364</width>
+            <height>80</height>
            </size>
           </property>
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Product Sans Medium</family>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(205,214,219);
-border: 1px solid  rgb(85,101,85);
-padding-left : 5px;</string>
+           <string notr="true">QScrollArea{
+	background-color: rgb(205,214,219);
+	border: 1px solid  rgb(85,101,85);
+	padding-left: 5px;
+	font: 10pt &quot;Product Sans Medium&quot;;
+	padding-top: 2px;
+}
+
+
+</string>
           </property>
-          <property name="text">
-           <string>NULL</string>
-          </property>
-          <property name="wordWrap">
+          <property name="widgetResizable">
            <bool>true</bool>
           </property>
-          <property name="textInteractionFlags">
-           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
-          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>352</width>
+             <height>68</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: none;
+border-radius: 0px;</string>
+           </property>
+          </widget>
          </widget>
         </item>
        </layout>
@@ -418,13 +479,13 @@ padding-left : 5px;</string>
        <property name="minimumSize">
         <size>
          <width>490</width>
-         <height>75</height>
+         <height>90</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
          <width>490</width>
-         <height>75</height>
+         <height>90</height>
         </size>
        </property>
        <property name="styleSheet">
@@ -442,13 +503,13 @@ padding-left : 5px;</string>
           <property name="minimumSize">
            <size>
             <width>100</width>
-            <height>50</height>
+            <height>80</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
             <width>100</width>
-            <height>50</height>
+            <height>80</height>
            </size>
           </property>
           <property name="styleSheet">
@@ -471,33 +532,72 @@ border-radius: 5px;
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="favCondLabel">
+         <widget class="QScrollLabel" name="favCondLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="minimumSize">
            <size>
-            <width>80</width>
-            <height>50</height>
+            <width>364</width>
+            <height>80</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>16777215</width>
-            <height>50</height>
+            <width>364</width>
+            <height>80</height>
            </size>
           </property>
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Product Sans Medium</family>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(205,214,219);
-border: 1px solid  rgb(85,101,85);
-padding-left : 5px;</string>
+           <string notr="true">QScrollArea{
+	background-color: rgb(205,214,219);
+	border: 1px solid  rgb(85,101,85);
+	padding-left: 5px;
+	font: 10pt &quot;Product Sans Medium&quot;;
+	padding-top: 2px;
+}
+
+
+</string>
           </property>
-          <property name="text">
-           <string>NULL</string>
-          </property>
-          <property name="wordWrap">
+          <property name="widgetResizable">
            <bool>true</bool>
           </property>
-          <property name="textInteractionFlags">
-           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
-          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>352</width>
+             <height>68</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: none;
+border-radius: 0px;</string>
+           </property>
+          </widget>
          </widget>
         </item>
        </layout>
@@ -507,6 +607,14 @@ padding-left : 5px;</string>
    </widget>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QScrollLabel</class>
+   <extends>QScrollArea</extends>
+   <header>qscrolllabel.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

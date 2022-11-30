@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'detailsWindowMJQjaF.ui'
+## Form generated from reading UI file 'detailsWindowpFjLdP.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -11,9 +11,11 @@
 from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
-import json as json
 
-class Ui_detailsWindow(QMainWindow):
+from qscrolllabel import QScrollLabel
+
+
+class Ui_detailsWindow(object):
     def setupUi(self, detailsWindow):
         if not detailsWindow.objectName():
             detailsWindow.setObjectName(u"detailsWindow")
@@ -27,8 +29,7 @@ class Ui_detailsWindow(QMainWindow):
         detailsWindow.setMinimumSize(QSize(500, 500))
         detailsWindow.setMaximumSize(QSize(500, 500))
         icon = QIcon()
-        icon.addFile(u":/newPrefix/logo.png", QSize(), QIcon.Normal, QIcon.Off)
-        icon.addFile(u"logo.png", QSize(), QIcon.Normal, QIcon.On)
+        icon.addFile(u"logo.png", QSize(), QIcon.Normal, QIcon.Off)
         detailsWindow.setWindowIcon(icon)
         detailsWindow.setIconSize(QSize(50, 50))
         self.centralwidget = QWidget(detailsWindow)
@@ -43,7 +44,9 @@ class Ui_detailsWindow(QMainWindow):
         self.verticaBlFrame.setStyleSheet(u"background-color: rgb(205,214,219);\n"
 "border: 1px solid rgb(205,214,219);")
         self.verticalLayout = QVBoxLayout(self.verticaBlFrame)
+        self.verticalLayout.setSpacing(6)
         self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(0, -1, 0, -1)
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
         self.verticalLayout.addItem(self.verticalSpacer)
@@ -54,7 +57,8 @@ class Ui_detailsWindow(QMainWindow):
         self.referencelImageLabel.setSizePolicy(sizePolicy)
         self.referencelImageLabel.setMinimumSize(QSize(100, 100))
         self.referencelImageLabel.setMaximumSize(QSize(100, 100))
-        self.referencelImageLabel.setStyleSheet(u"border-radius: 4px;")
+        self.referencelImageLabel.setStyleSheet(u"border: 2px solid rgb(85,101,85);\n"
+"border-radius: 10px;")
         self.referencelImageLabel.setPixmap(QPixmap(u"assets/006-virus.png"))
         self.referencelImageLabel.setScaledContents(True)
 
@@ -71,8 +75,8 @@ class Ui_detailsWindow(QMainWindow):
         sizePolicy1.setVerticalStretch(0)
         sizePolicy1.setHeightForWidth(self.horizontalFrame_2.sizePolicy().hasHeightForWidth())
         self.horizontalFrame_2.setSizePolicy(sizePolicy1)
-        self.horizontalFrame_2.setMinimumSize(QSize(490, 75))
-        self.horizontalFrame_2.setMaximumSize(QSize(490, 75))
+        self.horizontalFrame_2.setMinimumSize(QSize(490, 70))
+        self.horizontalFrame_2.setMaximumSize(QSize(490, 70))
         self.horizontalFrame_2.setStyleSheet(u"border-radius: 6px;")
         self.horizontalLayout_3 = QHBoxLayout(self.horizontalFrame_2)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
@@ -94,8 +98,12 @@ class Ui_detailsWindow(QMainWindow):
 
         self.diseaseNameLabel = QLabel(self.horizontalFrame_2)
         self.diseaseNameLabel.setObjectName(u"diseaseNameLabel")
-        self.diseaseNameLabel.setMinimumSize(QSize(80, 50))
-        self.diseaseNameLabel.setMaximumSize(QSize(400, 50))
+        self.diseaseNameLabel.setMinimumSize(QSize(364, 50))
+        self.diseaseNameLabel.setMaximumSize(QSize(364, 50))
+        font = QFont()
+        font.setFamily(u"Product Sans Medium")
+        font.setPointSize(10)
+        self.diseaseNameLabel.setFont(font)
         self.diseaseNameLabel.setStyleSheet(u"background-color: rgb(205,214,219);\n"
 "border: 1px solid  rgb(85,101,85);\n"
 "padding-left : 5px;")
@@ -110,8 +118,8 @@ class Ui_detailsWindow(QMainWindow):
         self.horizontalFrame_4.setObjectName(u"horizontalFrame_4")
         sizePolicy1.setHeightForWidth(self.horizontalFrame_4.sizePolicy().hasHeightForWidth())
         self.horizontalFrame_4.setSizePolicy(sizePolicy1)
-        self.horizontalFrame_4.setMinimumSize(QSize(490, 75))
-        self.horizontalFrame_4.setMaximumSize(QSize(490, 75))
+        self.horizontalFrame_4.setMinimumSize(QSize(490, 70))
+        self.horizontalFrame_4.setMaximumSize(QSize(490, 70))
         self.horizontalFrame_4.setStyleSheet(u"border-radius: 6px;")
         self.horizontalLayout_5 = QHBoxLayout(self.horizontalFrame_4)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
@@ -133,8 +141,9 @@ class Ui_detailsWindow(QMainWindow):
 
         self.pathogenLabel = QLabel(self.horizontalFrame_4)
         self.pathogenLabel.setObjectName(u"pathogenLabel")
-        self.pathogenLabel.setMinimumSize(QSize(80, 50))
-        self.pathogenLabel.setMaximumSize(QSize(16777215, 50))
+        self.pathogenLabel.setMinimumSize(QSize(364, 50))
+        self.pathogenLabel.setMaximumSize(QSize(364, 50))
+        self.pathogenLabel.setFont(font)
         self.pathogenLabel.setStyleSheet(u"background-color: rgb(205,214,219);\n"
 "border: 1px solid  rgb(85,101,85);\n"
 "padding-left : 5px;")
@@ -149,8 +158,8 @@ class Ui_detailsWindow(QMainWindow):
         self.horizontalFrame_3.setObjectName(u"horizontalFrame_3")
         sizePolicy1.setHeightForWidth(self.horizontalFrame_3.sizePolicy().hasHeightForWidth())
         self.horizontalFrame_3.setSizePolicy(sizePolicy1)
-        self.horizontalFrame_3.setMinimumSize(QSize(490, 75))
-        self.horizontalFrame_3.setMaximumSize(QSize(490, 75))
+        self.horizontalFrame_3.setMinimumSize(QSize(490, 90))
+        self.horizontalFrame_3.setMaximumSize(QSize(490, 90))
         self.horizontalFrame_3.setStyleSheet(u"border-radius: 6px;")
         self.horizontalLayout_4 = QHBoxLayout(self.horizontalFrame_3)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
@@ -161,8 +170,8 @@ class Ui_detailsWindow(QMainWindow):
         sizePolicy2.setVerticalStretch(0)
         sizePolicy2.setHeightForWidth(self.label_4.sizePolicy().hasHeightForWidth())
         self.label_4.setSizePolicy(sizePolicy2)
-        self.label_4.setMinimumSize(QSize(100, 50))
-        self.label_4.setMaximumSize(QSize(100, 50))
+        self.label_4.setMinimumSize(QSize(100, 80))
+        self.label_4.setMaximumSize(QSize(100, 80))
         self.label_4.setStyleSheet(u"color: rgb(255,255,255);\n"
 "background-color: rgb(85,101,85);\n"
 "font: 10pt \"Product Sans Medium\";\n"
@@ -173,15 +182,41 @@ class Ui_detailsWindow(QMainWindow):
 
         self.horizontalLayout_4.addWidget(self.label_4)
 
-        self.symptomsLabel = QLabel(self.horizontalFrame_3)
+        self.symptomsLabel = QScrollLabel(self.horizontalFrame_3)
         self.symptomsLabel.setObjectName(u"symptomsLabel")
-        self.symptomsLabel.setMinimumSize(QSize(80, 50))
-        self.symptomsLabel.setMaximumSize(QSize(16777215, 50))
-        self.symptomsLabel.setStyleSheet(u"background-color: rgb(205,214,219);\n"
-"border: 1px solid  rgb(85,101,85);\n"
-"padding-left : 5px;")
-        self.symptomsLabel.setWordWrap(True)
-        self.symptomsLabel.setTextInteractionFlags(Qt.LinksAccessibleByMouse|Qt.TextSelectableByKeyboard|Qt.TextSelectableByMouse)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.symptomsLabel.sizePolicy().hasHeightForWidth())
+        self.symptomsLabel.setSizePolicy(sizePolicy3)
+        self.symptomsLabel.setMinimumSize(QSize(364, 80))
+        self.symptomsLabel.setMaximumSize(QSize(364, 80))
+        self.symptomsLabel.setBaseSize(QSize(0, 0))
+        font1 = QFont()
+        font1.setFamily(u"Product Sans Medium")
+        font1.setPointSize(10)
+        font1.setBold(False)
+        font1.setItalic(False)
+        font1.setWeight(50)
+        self.symptomsLabel.setFont(font1)
+        self.symptomsLabel.setAutoFillBackground(False)
+        self.symptomsLabel.setStyleSheet(u"QScrollArea{\n"
+"	background-color: rgb(205,214,219);\n"
+"	border: 1px solid  rgb(85,101,85);\n"
+"	padding-left: 5px;\n"
+"	font: 10pt \"Product Sans Medium\";\n"
+"	padding-top: 2px;\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.symptomsLabel.setWidgetResizable(True)
+        '''self.scrollAreaWidgetContents = QWidget()
+        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 352, 68))
+        self.scrollAreaWidgetContents.setStyleSheet(u"border: none;\n"
+"border-radius: 0px;")
+        self.symptomsLabel.setWidget(self.scrollAreaWidgetContents)'''
 
         self.horizontalLayout_4.addWidget(self.symptomsLabel)
 
@@ -192,8 +227,8 @@ class Ui_detailsWindow(QMainWindow):
         self.horizontalFrame_5.setObjectName(u"horizontalFrame_5")
         sizePolicy1.setHeightForWidth(self.horizontalFrame_5.sizePolicy().hasHeightForWidth())
         self.horizontalFrame_5.setSizePolicy(sizePolicy1)
-        self.horizontalFrame_5.setMinimumSize(QSize(490, 75))
-        self.horizontalFrame_5.setMaximumSize(QSize(490, 75))
+        self.horizontalFrame_5.setMinimumSize(QSize(490, 90))
+        self.horizontalFrame_5.setMaximumSize(QSize(490, 90))
         self.horizontalFrame_5.setStyleSheet(u"border-radius: 6px;")
         self.horizontalLayout_6 = QHBoxLayout(self.horizontalFrame_5)
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
@@ -201,8 +236,8 @@ class Ui_detailsWindow(QMainWindow):
         self.label_6.setObjectName(u"label_6")
         sizePolicy.setHeightForWidth(self.label_6.sizePolicy().hasHeightForWidth())
         self.label_6.setSizePolicy(sizePolicy)
-        self.label_6.setMinimumSize(QSize(100, 50))
-        self.label_6.setMaximumSize(QSize(100, 50))
+        self.label_6.setMinimumSize(QSize(100, 80))
+        self.label_6.setMaximumSize(QSize(100, 80))
         self.label_6.setStyleSheet(u"color: rgb(255,255,255);\n"
 "background-color: rgb(85,101,85);\n"
 "font: 10pt \"Product Sans Medium\";\n"
@@ -214,15 +249,32 @@ class Ui_detailsWindow(QMainWindow):
 
         self.horizontalLayout_6.addWidget(self.label_6)
 
-        self.favCondLabel = QLabel(self.horizontalFrame_5)
+        self.favCondLabel = QScrollLabel(self.horizontalFrame_5)
         self.favCondLabel.setObjectName(u"favCondLabel")
-        self.favCondLabel.setMinimumSize(QSize(80, 50))
-        self.favCondLabel.setMaximumSize(QSize(16777215, 50))
-        self.favCondLabel.setStyleSheet(u"background-color: rgb(205,214,219);\n"
-"border: 1px solid  rgb(85,101,85);\n"
-"padding-left : 5px;")
-        self.favCondLabel.setWordWrap(True)
-        self.favCondLabel.setTextInteractionFlags(Qt.LinksAccessibleByMouse|Qt.TextSelectableByKeyboard|Qt.TextSelectableByMouse)
+        sizePolicy3.setHeightForWidth(self.favCondLabel.sizePolicy().hasHeightForWidth())
+        self.favCondLabel.setSizePolicy(sizePolicy3)
+        self.favCondLabel.setMinimumSize(QSize(364, 80))
+        self.favCondLabel.setMaximumSize(QSize(364, 80))
+        self.favCondLabel.setBaseSize(QSize(0, 0))
+        self.favCondLabel.setFont(font1)
+        self.favCondLabel.setAutoFillBackground(False)
+        self.favCondLabel.setStyleSheet(u"QScrollArea{\n"
+"	background-color: rgb(205,214,219);\n"
+"	border: 1px solid  rgb(85,101,85);\n"
+"	padding-left: 5px;\n"
+"	font: 10pt \"Product Sans Medium\";\n"
+"	padding-top: 2px;\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.favCondLabel.setWidgetResizable(True)
+        '''self.scrollAreaWidgetContents_2 = QWidget()
+        self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 352, 68))
+        self.scrollAreaWidgetContents_2.setStyleSheet(u"border: none;\n"
+"border-radius: 0px;")
+        self.favCondLabel.setWidget(self.scrollAreaWidgetContents_2)'''
 
         self.horizontalLayout_6.addWidget(self.favCondLabel)
 
@@ -234,7 +286,6 @@ class Ui_detailsWindow(QMainWindow):
         self.retranslateUi(detailsWindow)
 
         QMetaObject.connectSlotsByName(detailsWindow)
-        
     # setupUi
 
     def retranslateUi(self, detailsWindow):
@@ -245,9 +296,6 @@ class Ui_detailsWindow(QMainWindow):
         self.label_3.setText(QCoreApplication.translate("detailsWindow", u"Pathogen", None))
         self.pathogenLabel.setText(QCoreApplication.translate("detailsWindow", u"NULL", None))
         self.label_4.setText(QCoreApplication.translate("detailsWindow", u"Symptoms", None))
-        self.symptomsLabel.setText(QCoreApplication.translate("detailsWindow", u"NULL", None))
         self.label_6.setText(QCoreApplication.translate("detailsWindow", u"Favourable Conditions", None))
-        self.favCondLabel.setText(QCoreApplication.translate("detailsWindow", u"NULL", None))
     # retranslateUi
-    def closeEvent(self,event):
-        pass
+
