@@ -1,7 +1,7 @@
 {
     "anthracnose":{
         "remedy":"Remove and destroy any infected plants in your garden. For trees, prune out the dead wood and destroy the infected leaves. You can try spraying your plants with a copper-based fungicide, though be careful because copper can build up to toxic levels in the soil for earthworms and microbes.",
-        "products":["Daconil","Liquicop","Banner Maxx II"],
+        "products":["Daconil","Liquicop","Banner Maxx II"],
         "links":["shorturl.at/eguvI","shorturl.at/fgjJY","shorturl.at/bhsHJ"]
     },
     "cercospora_leaf_spot":{
@@ -15,13 +15,13 @@
         "links":["shorturl.at/sBLMY","shorturl.at/ekrHT"]
     },
     "stemphylium":{
-        "remedy":"There is no known treatment for stemphylium at this time.",
+        "remedy":"There is no known treatment for stemphylium at this time.",
         "products":[],
         "links":[]
     },
     "cladosporium_leaf_spot":{
-        "remedy":"Copper sprays are not very effective. Apply as a protectant spray at 10–14 day intervals. Rate often depends upon disease severity.",
-        "products":["agricultural spray oil","copper formulations"],
+        "remedy":"Copper sprays are not very effective. Apply as a protectant spray at 10 - 14 day intervals. Rate often depends upon disease severity.",
+        "products":["agricultural spray oil","copper formulations"],
         "links":["shorturl.at/jlsY1","shorturl.at/yBHL8"]
-    },
+    }
 }
