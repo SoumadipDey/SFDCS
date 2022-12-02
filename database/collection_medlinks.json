@@ -1,27 +1,32 @@
 {
     "anthracnose":{
-        "remedy":"Remove and destroy any infected plants in your garden. For trees, prune out the dead wood and destroy the infected leaves. You can try spraying your plants with a copper-based fungicide, though be careful because copper can build up to toxic levels in the soil for earthworms and microbes.",
+        "name": "Anthracnose",
+        "remedy":"Remove and destroy any infected plants. Spray the plants with a copper-based fungicide, but precaution should be  taken because copper can build up to toxic levels in the soil for earthworms and microbes.",
         "products":["Daconil","Liquicop","Banner Maxx II"],
         "links":["shorturl.at/eguvI","shorturl.at/fgjJY","shorturl.at/bhsHJ"]
     },
     "cercospora_leaf_spot":{
+        "name": "Cercospora Leaf Spot",
         "remedy":"There are some fungicides available to help manage Cercospora leaf spot. Products containing chlorothalonil, myclobutanil or thiophanate-methyl are most effective when applied prior to or at the first sign of leaf spots.",
-        "products":["SYSTHANE(myclobutanil)","HERITAGE(azoxystrobin)"],
+        "products":["SYSTHANE (Myclobutanil)","HERITAGE (Azoxystrobin)"],
         "links":["shorturl.at/biBI6","shorturl.at/GLQZ9"]
     },
     "downey_mildew":{
+        "name": "Downy Mildew",
         "remedy":"Broad spectrum protectant fungicides such as chlorothalonil, mancozeb, and fixed copper are at least somewhat effective in protecting against downy mildew infection",
-        "products":["Chlorothalonil","mancozeb"],
+        "products":["Chlorothalonil","Mancozeb"],
         "links":["shorturl.at/sBLMY","shorturl.at/ekrHT"]
     },
     "stemphylium":{
-        "remedy":"There is no known treatment for stemphylium at this time.",
+        "name": "Stemphylium Leaf Spot",
+        "remedy":"There is no known treatment for stemphylium till date.",
         "products":[],
         "links":[]
     },
     "cladosporium_leaf_spot":{
+        "name": "Cladosporium Leaf Spot",
         "remedy":"Copper sprays are not very effective. Apply as a protectant spray at 10 - 14 day intervals. Rate often depends upon disease severity.",
-        "products":["agricultural spray oil","copper formulations"],
+        "products":["Agricultural spray oil","Copper Formulations"],
         "links":["shorturl.at/jlsY1","shorturl.at/yBHL8"]
     }
 }

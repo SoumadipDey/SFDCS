@@ -38,9 +38,8 @@
    <string>Spinach Disease Classifier</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>:/newPrefix/logo.png</normaloff>
-    <normalon>logo.png</normalon>:/newPrefix/logo.png</iconset>
+   <iconset resource="resources.qrc">
+    <normaloff>:/logo/logo.png</normaloff>:/logo/logo.png</iconset>
   </property>
   <property name="windowOpacity">
    <double>0.990000000000000</double>
@@ -236,7 +235,7 @@ border-radius: 15px;</string>
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap>assets/spinach.png</pixmap>
+              <pixmap resource="resources.qrc">:/assets/assets/spinach.png</pixmap>
              </property>
              <property name="scaledContents">
               <bool>true</bool>
@@ -302,8 +301,14 @@ color: rgb(0,0,0);
                  <string>Browse for Picture</string>
                 </property>
                 <property name="icon">
-                 <iconset>
-                  <normaloff>assets/002-image.png</normaloff>assets/002-image.png</iconset>
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/assets/assets/002-image.png</normaloff>:/assets/assets/002-image.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
                 </property>
                </widget>
               </item>
@@ -362,8 +367,14 @@ color: rgb(0,0,0);
                  <string>Predict</string>
                 </property>
                 <property name="icon">
-                 <iconset>
-                  <normaloff>assets/005-nature-product.png</normaloff>assets/005-nature-product.png</iconset>
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/assets/assets/005-nature-product.png</normaloff>:/assets/assets/005-nature-product.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
                 </property>
                </widget>
               </item>
@@ -762,8 +773,14 @@ color: rgb(0,0,0);
                     <string>See More </string>
                    </property>
                    <property name="icon">
-                    <iconset>
-                     <normaloff>assets/003-vision.png</normaloff>assets/003-vision.png</iconset>
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/assets/assets/003-vision.png</normaloff>:/assets/assets/003-vision.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
                    </property>
                    <property name="flat">
                     <bool>false</bool>
@@ -816,8 +833,14 @@ color: rgb(0,0,0);
                     <string>Cure</string>
                    </property>
                    <property name="icon">
-                    <iconset>
-                     <normaloff>assets/004-natural-product.png</normaloff>assets/004-natural-product.png</iconset>
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/assets/assets/004-natural-product.png</normaloff>:/assets/assets/004-natural-product.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
                    </property>
                   </widget>
                  </item>
@@ -837,6 +860,8 @@ color: rgb(0,0,0);
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

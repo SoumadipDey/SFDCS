@@ -1,10 +1,12 @@
 # Importing GUI files and necessary packages
-from spinachClassifierMainUI import Ui_MainWindow
-from detailsWindowUI import Ui_detailsWindow
+from views.spinachClassifierMainUI import Ui_MainWindow
+from views.detailsWindowUI import Ui_detailsWindow
+from views.cureWindowUI import Ui_cureWindow
 from PySide2.QtWidgets import *
 from PySide2.QtCore import *
 from PySide2.QtGui import *
 import sys
+import webbrowser
 
 #Telling windows to let me make my own taskbar icons
 import ctypes
@@ -32,6 +34,7 @@ class MainWindow(QMainWindow):
         self.detail_ui = None
         self.cureWindow = None
         self.cure_ui = None
+        self.links = None
 
         #Initializing some variables and iterables for future use
         self.classification = None
@@ -52,7 +55,7 @@ class MainWindow(QMainWindow):
         self.ui.browseBtn.clicked.connect(self.fileSelector)
         self.ui.predictBtn.clicked.connect(self.predictClass)
         self.ui.detailsBtn.clicked.connect(self.openDetails)
-        self.ui.cureBtn.clicked.connect(lambda: print("Not Implemented Yet!"))
+        self.ui.cureBtn.clicked.connect(self.openCure)
 
     def fileSelector(self) -> None:
         #Show File Dialouge Box
@@ -69,7 +72,7 @@ class MainWindow(QMainWindow):
             if(self.selectedImagePath):
                 self.ui.selectedImageLabel.setPixmap(QPixmap(self.selectedImagePath))
             else:
-                self.ui.selectedImageLabel.setPixmap(QPixmap(u"assets/spinach.png"))
+                self.ui.selectedImageLabel.setPixmap(QPixmap(u"views/assets/spinach.png"))
     
     def predictClass(self) -> None:
 
@@ -143,6 +146,55 @@ class MainWindow(QMainWindow):
 
         self.detailsWindow.show()
     
+    def openCure(self) -> None:
+        
+        #Code to open the cure screen here
+        self.cureWindow = QMainWindow()
+        self.cure_ui = Ui_cureWindow()
+        self.cure_ui.setupUi(self.cureWindow)
+
+        cureInfoPath = f"{self.databasePath}/collection_medlinks.json"
+        
+        diseaseImagePath = f"{self.databasePath}/ReferenceImages/{self.classification}.jpg"
+        diseasePixmap = QPixmap(diseaseImagePath)
+        self.cure_ui.cureImageLabel.setPixmap(QPixmap(diseasePixmap))
+
+        with open(cureInfoPath) as json_file:
+                collection = json.load(json_file)[self.classification]
+                diseaseName = collection["name"]
+                remedy = collection["remedy"]
+                products = collection["products"]
+                links = collection["links"]
+        
+        # Clearing and refilling the list widget
+        self.cure_ui.productList.clear()
+        self.links = links
+
+        if(len(products) != len(links)):
+            print(f"Product Database Corrupted for {self.classification}!!")
+        else:
+            if(len(products) > 0):
+                for index,item in enumerate(products):
+                    newItem = QListWidgetItem(item)
+                    newItem.setData(Qt.UserRole, index)
+                    self.cure_ui.productList.addItem(newItem)
+            else:
+                self.cure_ui.productList.insertItem(0,"NULL")
+                newItem = QListWidgetItem(item)
+                newItem.setData(Qt.UserRole, links[index])
+                self.cure_ui.productList.addItem(newItem)
+
+        self.cure_ui.remedyHeaderLabel.setText(f"Remedy for {diseaseName} :")
+        self.cure_ui.remedyDetailsLabel.setText(remedy)
+        self.cure_ui.productList.itemClicked.connect(self.clickedListItem)
+        self.cureWindow.show()
+
+    def clickedListItem(self,item : QListWidgetItem) -> None:
+        if(not item.text() == "NULL"):
+            product_link = "https://" + self.links[int(item.data(Qt.UserRole))]
+            webbrowser.open_new_tab(product_link)
+        else:
+            print("No Links Attached!")
 
 if __name__ == "__main__":
     # Prevent Tesnsorflow from printing info / warning

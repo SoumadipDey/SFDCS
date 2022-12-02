@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="assets">
+    <file>assets/001-application.png</file>
+    <file>assets/001-fast-forward.png</file>
+    <file>assets/002-settings.png</file>
+    <file>assets/003-http.png</file>
+    <file>assets/006-virus.png</file>
+    <file>assets/007-fertilize.png</file>
+    <file>assets/002-image.png</file>
+    <file>assets/003-vision.png</file>
+    <file>assets/004-natural-product.png</file>
+    <file>assets/005-nature-product.png</file>
+    <file>assets/spinach.png</file>
+  </qresource>
+  <qresource prefix="logo">
+    <file>logo.png</file>
+  </qresource>
+</RCC>

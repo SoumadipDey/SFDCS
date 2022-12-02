@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'spinachClassifierMainUIqmczZX.ui'
+## Form generated from reading UI file 'spinachClassifierMainUIanMKVW.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -11,6 +11,8 @@
 from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
+
+from .resources_rc import *
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -30,8 +32,7 @@ class Ui_MainWindow(object):
         font.setPointSize(12)
         MainWindow.setFont(font)
         icon = QIcon()
-        icon.addFile(u":/newPrefix/logo.png", QSize(), QIcon.Normal, QIcon.Off)
-        icon.addFile(u"logo.png", QSize(), QIcon.Normal, QIcon.On)
+        icon.addFile(u":/logo/logo.png", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setWindowOpacity(0.990000000000000)
         MainWindow.setIconSize(QSize(40, 40))
@@ -99,7 +100,7 @@ class Ui_MainWindow(object):
         self.selectedImageLabel.setMaximumSize(QSize(300, 300))
         self.selectedImageLabel.setStyleSheet(u"/*border: 1px solid rgb(85,101,85);*/\n"
 "border-radius: 15px;")
-        self.selectedImageLabel.setPixmap(QPixmap(u"assets/spinach.png"))
+        self.selectedImageLabel.setPixmap(QPixmap(u":/assets/assets/spinach.png"))
         self.selectedImageLabel.setScaledContents(True)
 
         self.verticalLayout_2.addWidget(self.selectedImageLabel, 0, Qt.AlignHCenter)
@@ -133,8 +134,9 @@ class Ui_MainWindow(object):
 "\n"
 "")
         icon1 = QIcon()
-        icon1.addFile(u"assets/002-image.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/assets/assets/002-image.png", QSize(), QIcon.Normal, QIcon.Off)
         self.browseBtn.setIcon(icon1)
+        self.browseBtn.setIconSize(QSize(20, 20))
 
         self.horizontalLayout_2.addWidget(self.browseBtn)
 
@@ -165,8 +167,9 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         icon2 = QIcon()
-        icon2.addFile(u"assets/005-nature-product.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/assets/assets/005-nature-product.png", QSize(), QIcon.Normal, QIcon.Off)
         self.predictBtn.setIcon(icon2)
+        self.predictBtn.setIconSize(QSize(20, 20))
 
         self.horizontalLayout_2.addWidget(self.predictBtn)
 
@@ -347,8 +350,9 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         icon3 = QIcon()
-        icon3.addFile(u"assets/003-vision.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/assets/assets/003-vision.png", QSize(), QIcon.Normal, QIcon.Off)
         self.detailsBtn.setIcon(icon3)
+        self.detailsBtn.setIconSize(QSize(20, 20))
         self.detailsBtn.setFlat(False)
 
         self.horizontalLayout_4.addWidget(self.detailsBtn)
@@ -376,8 +380,9 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         icon4 = QIcon()
-        icon4.addFile(u"assets/004-natural-product.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/assets/assets/004-natural-product.png", QSize(), QIcon.Normal, QIcon.Off)
         self.cureBtn.setIcon(icon4)
+        self.cureBtn.setIconSize(QSize(20, 20))
 
         self.horizontalLayout_4.addWidget(self.cureBtn)
 

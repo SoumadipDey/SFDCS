@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'detailsWindowpFjLdP.ui'
+## Form generated from reading UI file 'detailsWindowoaBaLJ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -12,8 +12,9 @@ from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
-from qscrolllabel import QScrollLabel
+from .customWidgets.qscrolllabel import QScrollLabel
 
+from .resources_rc import *
 
 class Ui_detailsWindow(object):
     def setupUi(self, detailsWindow):
@@ -29,7 +30,7 @@ class Ui_detailsWindow(object):
         detailsWindow.setMinimumSize(QSize(500, 500))
         detailsWindow.setMaximumSize(QSize(500, 500))
         icon = QIcon()
-        icon.addFile(u"logo.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/logo/logo.png", QSize(), QIcon.Normal, QIcon.Off)
         detailsWindow.setWindowIcon(icon)
         detailsWindow.setIconSize(QSize(50, 50))
         self.centralwidget = QWidget(detailsWindow)
@@ -59,7 +60,7 @@ class Ui_detailsWindow(object):
         self.referencelImageLabel.setMaximumSize(QSize(100, 100))
         self.referencelImageLabel.setStyleSheet(u"border: 2px solid rgb(85,101,85);\n"
 "border-radius: 10px;")
-        self.referencelImageLabel.setPixmap(QPixmap(u"assets/006-virus.png"))
+        self.referencelImageLabel.setPixmap(QPixmap(u":/assets/assets/006-virus.png"))
         self.referencelImageLabel.setScaledContents(True)
 
         self.verticalLayout.addWidget(self.referencelImageLabel, 0, Qt.AlignHCenter)
