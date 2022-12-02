@@ -2,7 +2,9 @@
 Spinach Fungi Disease Classification and Cure Suggestion System
 
 > Can currently do predictions just fine.
+> 
 > Can show details.
+> 
 > Can provide remedy information and product links.
 
 ### How to set up
@@ -14,4 +16,4 @@ Go into terminal/cmd within the project folder and type `pip install -r requirem
 
 After all has been done, execute the program by executing the **main.py** file.
 
-Finally.. explore the code and try to understand what everything does before I write a proper Readme for the project.
+Screenshots will be added later.
