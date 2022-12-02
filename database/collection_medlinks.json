@@ -16,8 +16,8 @@
     },
     "stemphylium":{
         "remedy":"There is no known treatment for stemphylium at this time.",
-        "products":["null"],
-        "links":["null"]
+        "products":[],
+        "links":[]
     },
     "cladosporium_leaf_spot":{
         "remedy":"Copper sprays are not very effective. Apply as a protectant spray at 10–14 day intervals. Rate often depends upon disease severity.",
