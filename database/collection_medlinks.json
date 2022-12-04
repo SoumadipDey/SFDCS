@@ -17,7 +17,7 @@
         "products":["Chlorothalonil","Mancozeb"],
         "links":["shorturl.at/sBLMY","shorturl.at/ekrHT"]
     },
-    "stemphylium":{
+    "stemphylium_leaf_spot":{
         "name": "Stemphylium Leaf Spot",
         "remedy":"There is no known treatment for stemphylium till date.",
         "products":[],

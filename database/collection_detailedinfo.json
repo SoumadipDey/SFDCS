@@ -32,7 +32,7 @@
     "stemphylium_leaf_spot" : {
         "name": "Stemphylium Leaf Spot",
         "pathogen": "Stemphylium botryosum, Stemphylium sp and S. beticola.",
-        "symptoms": "Symptoms of Stemphylium leaf spot on leaves consist of small (0.13 to 0.25 inch diameter), circular to oval, gray-green leaf spots. As the disease progresses, leaf spots enlarge, remain circular to oval in shape, and turn tan in color. Older spots coalesce, dry up, and become papery in texture",
+        "symptoms": "Symptoms of Stemphylium leaf spot on leaves consist of small (0.13 to 0.25 cm diameter), circular to oval, gray-green leaf spots. As the disease progresses, leaf spots enlarge, remain circular to oval in shape, and turn tan in color. Older spots coalesce, dry up, and become papery in texture",
         "favourable_conditions": "Prolonged periods of leaf wetness when temperatures are moderate (17°C - 23°C). Frequent rains."
     }
 }

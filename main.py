@@ -179,9 +179,8 @@ class MainWindow(QMainWindow):
                     newItem.setData(Qt.UserRole, index)
                     self.cure_ui.productList.addItem(newItem)
             else:
-                self.cure_ui.productList.insertItem(0,"NULL")
-                newItem = QListWidgetItem(item)
-                newItem.setData(Qt.UserRole, links[index])
+                newItem = QListWidgetItem("NULL")
+                newItem.setData(Qt.UserRole, 0)
                 self.cure_ui.productList.addItem(newItem)
 
         self.cure_ui.remedyHeaderLabel.setText(f"Remedy for {diseaseName} :")
