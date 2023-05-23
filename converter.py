@@ -2,15 +2,23 @@
 import tensorflow as tf
 from keras.models import load_model
 
-# modelLeafDetect = 
-modelSpinachClassify = load_model("models\SFDNet_best_val_accuracy.h5")
-converter_SpinachClassify = tf.lite.TFLiteConverter.from_keras_model(
-    model = modelSpinachClassify
+model = load_model("models\LeafModel_best.h5", compile=False)
+model.compile(
+    optimizer = tf.keras.optimizers.RMSprop(learning_rate = 0.00013),
+    loss = tf.keras.losses.BinaryCrossentropy(),
+    metrics = ['accuracy',
+               'Precision',
+               'Recall'
+              ]
+)
+model.summary()
+converter = tf.lite.TFLiteConverter.from_keras_model(
+    model = model
 )
 
 #converter_SpinachClassify.optimizations = [tf.lite.Optimize.DEFAULT]
 
-lite_SpinachClassify = converter_SpinachClassify.convert()
+lite_model = converter.convert()
 
-with open("models\lite_SFDNet_model.tflite","wb") as f:
-    f.write(lite_SpinachClassify)
+with open("models\lite_LeafModel_best.tflite","wb") as f:
+    f.write(lite_model)
