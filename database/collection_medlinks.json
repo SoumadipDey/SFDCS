@@ -3,19 +3,19 @@
         "name": "Anthracnose",
         "remedy":"Remove and destroy any infected plants. Spray the plants with a copper-based fungicide, but precaution should be  taken because copper can build up to toxic levels in the soil for earthworms and microbes.",
         "products":["Daconil","Liquicop","Banner Maxx II"],
-        "links":["shorturl.at/eguvI","shorturl.at/fgjJY","shorturl.at/bhsHJ"]
+        "links":["https://amzn.eu/d/6n4UMND","https://amzn.eu/d/drcJ9iB","https://a.co/d/fdScMAH"]
     },
     "cercospora_leaf_spot":{
         "name": "Cercospora Leaf Spot",
         "remedy":"There are some fungicides available to help manage Cercospora leaf spot. Products containing chlorothalonil, myclobutanil or thiophanate-methyl are most effective when applied prior to or at the first sign of leaf spots.",
-        "products":["SYSTHANE (Myclobutanil)","HERITAGE (Azoxystrobin)"],
-        "links":["shorturl.at/biBI6","shorturl.at/GLQZ9"]
+        "products":["SYSTHANE (Myclobutanil)","Azoxystrobin"],
+        "links":["https://www.bighaat.com/products/systhane","https://amzn.eu/d/fGGZoAw"]
     },
     "downy_mildew":{
         "name": "Downy Mildew",
         "remedy":"Broad spectrum protectant fungicides such as chlorothalonil, mancozeb, and fixed copper are at least somewhat effective in protecting against downy mildew infection",
         "products":["Chlorothalonil","Mancozeb"],
-        "links":["shorturl.at/sBLMY","shorturl.at/ekrHT"]
+        "links":["https://amzn.eu/d/e9Dxdmz","https://amzn.eu/d/gboUu2V"]
     },
     "stemphylium_leaf_spot":{
         "name": "Stemphylium Leaf Spot",
@@ -27,6 +27,6 @@
         "name": "Cladosporium Leaf Spot",
         "remedy":"Copper sprays are not very effective. Apply as a protectant spray at 10 - 14 day intervals. Rate often depends upon disease severity.",
         "products":["Agricultural spray oil","Copper Formulations"],
-        "links":["shorturl.at/jlsY1","shorturl.at/yBHL8"]
+        "links":["https://amzn.eu/d/djjEMAG","https://amzn.eu/d/dXOdwjx"]
     }
 }
